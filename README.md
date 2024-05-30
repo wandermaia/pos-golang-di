@@ -27,6 +27,13 @@ wander@bsnote283:~/pos-golang-di$
 
 ```
 
+Neste caso, o main fica dividido em dois arquivos. Dessa forma, temos que executar o programa dessa forma:
+
+```bash
+
+go run main.go wire_gen.go
+
+```
 
 ### Bibliotecas para Injeção de Dependências
 

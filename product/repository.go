@@ -6,6 +6,10 @@ type ProductRepository struct {
 	db *sql.DB
 }
 
+type ProductRepositoryInterface interface {
+	GetProduct(id int) (Product, error)
+}
+
 func NewProductRepository(db *sql.DB) *ProductRepository {
 	return &ProductRepository{db}
 }
